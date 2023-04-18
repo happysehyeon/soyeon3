@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>안녕</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_index.css">
+    <script>
+        function nightDayHandler(self) {
+            var target1 = document.querySelector('body');
+        var target2 = document.querySelector('.t');target2
+        if (self.value === '다크모드 ^_^') {
+            target1.style.backgroundColor = 'black';
+            target2.style.color = 'white';
+            self.value = '원래대로';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < 4) {
+                alist[i].style.color = 'lightpink';
+                i = i + 1;
+            }
+        }
+        else {
+            target1.style.backgroundColor = 'white';
+            target2.style.color = 'black'; 
+            self.value = '다크모드 ^_^';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < 4) {
+                alist[i].style.color = 'deepskyblue';
+                i = i + 1;
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <h1><a href="index.html" class="t">둥댕이에게 쓰는 편지</a></h1> 
+    <input type="button" value="다크모드 ^_^" onclick="
+    nightDayHandler(this);
+    ">
+    <div id="grid">
+        <div>
+            <ul>
+                <li><a href="1.html" title="소연아1">소연아</a></li>
+                <li><a href="2.html">소연아</a></li>
+                <li><a href="3.html">소연아</a></li>   
+            </ul>
+        </div>
+        <div>
+            <img src="치이카와.png">
+            <img src="치이카와.png">
+            <img src="치이카와.png">
+            <img src="치이카와.png">
+            <img src="치이카와.png">
+            <img src="치이카와.png">
+            <img src="치이카와.png"> 
+            <img src="치이카와.png"> 
+            <img src="치이카와.png"> 
+            <img src="치이카와.png"> 
+        </div>
+    </div>
+</body>
+</html>
